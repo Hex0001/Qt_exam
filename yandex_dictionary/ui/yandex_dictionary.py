@@ -3,7 +3,7 @@
 ################################################################################
 ## Form generated from reading UI file 'yandex_dictionary.ui'
 ##
-## Created by: Qt User Interface Compiler version 6.8.0
+## Created by: Qt User Interface Compiler version 6.8.1
 ##
 ## WARNING! All changes made in this file will be lost when recompiling UI file!
 ################################################################################
@@ -24,7 +24,9 @@ class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         if not MainWindow.objectName():
             MainWindow.setObjectName(u"MainWindow")
-        MainWindow.resize(767, 740)
+        MainWindow.resize(614, 573)
+        MainWindow.setMinimumSize(QSize(400, 450))
+        MainWindow.setStyleSheet(u"")
         self.centralwidget = QWidget(MainWindow)
         self.centralwidget.setObjectName(u"centralwidget")
         self.verticalLayout_6 = QVBoxLayout(self.centralwidget)
@@ -52,6 +54,9 @@ class Ui_MainWindow(object):
         self.horizontalLayout_2.setObjectName(u"horizontalLayout_2")
         self.labelLanguageSelect = QLabel(self.centralwidget)
         self.labelLanguageSelect.setObjectName(u"labelLanguageSelect")
+        font = QFont()
+        font.setBold(True)
+        self.labelLanguageSelect.setFont(font)
 
         self.horizontalLayout_2.addWidget(self.labelLanguageSelect)
 
@@ -67,6 +72,8 @@ class Ui_MainWindow(object):
         self.horizontalLayout_3.setObjectName(u"horizontalLayout_3")
         self.labelDefSelect = QLabel(self.centralwidget)
         self.labelDefSelect.setObjectName(u"labelDefSelect")
+        self.labelDefSelect.setFont(font)
+        self.labelDefSelect.setStyleSheet(u"")
 
         self.horizontalLayout_3.addWidget(self.labelDefSelect)
 
@@ -154,7 +161,7 @@ class Ui_MainWindow(object):
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QMenuBar(MainWindow)
         self.menubar.setObjectName(u"menubar")
-        self.menubar.setGeometry(QRect(0, 0, 767, 22))
+        self.menubar.setGeometry(QRect(0, 0, 614, 22))
         MainWindow.setMenuBar(self.menubar)
         self.statusbar = QStatusBar(MainWindow)
         self.statusbar.setObjectName(u"statusbar")
@@ -169,8 +176,8 @@ class Ui_MainWindow(object):
         MainWindow.setWindowTitle(QCoreApplication.translate("MainWindow", u"\u041f\u0435\u0440\u0435\u0432\u043e\u0434\u0447\u0438\u043a-\u0441\u043b\u043e\u0432\u0430\u0440\u044c", None))
         self.lineEditText.setPlaceholderText(QCoreApplication.translate("MainWindow", u"\u0412\u0432\u0435\u0434\u0438\u0442\u0435 \u0441\u043b\u043e\u0432\u043e", None))
         self.pushButtonOK.setText(QCoreApplication.translate("MainWindow", u"OK", None))
-        self.labelLanguageSelect.setText(QCoreApplication.translate("MainWindow", u"\u0412\u044b\u0431\u043e\u0440 \u044f\u0437\u044b\u043a\u0430", None))
-        self.labelDefSelect.setText(QCoreApplication.translate("MainWindow", u"\u0412\u044b\u0431\u043e\u0440 \u043d\u043e\u043c\u0435\u0440\u0430 \u0432\u0430\u0440\u0438\u0430\u043d\u0442\u0430:", None))
+        self.labelLanguageSelect.setText(QCoreApplication.translate("MainWindow", u"\u0412\u044b\u0431\u043e\u0440 \u044f\u0437\u044b\u043a\u0430:", None))
+        self.labelDefSelect.setText(QCoreApplication.translate("MainWindow", u"\u0412\u044b\u0431\u043e\u0440 \u043d\u043e\u043c\u0435\u0440\u0430 \u0432\u0430\u0440\u0438\u0430\u043d\u0442\u0430 \u043f\u0435\u0440\u0435\u0432\u043e\u0434\u0430:", None))
         self.labelDef.setText(QCoreApplication.translate("MainWindow", u"\u041e\u043f\u0438\u0441\u0430\u043d\u0438\u0435:", None))
         self.labelTranslate.setText(QCoreApplication.translate("MainWindow", u"\u041f\u0435\u0440\u0435\u0432\u043e\u0434:", None))
         self.labelSyn.setText(QCoreApplication.translate("MainWindow", u"\u0421\u0438\u043d\u043e\u043d\u0438\u043c\u044b:", None))

@@ -6,12 +6,21 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>767</width>
-    <height>740</height>
+    <width>614</width>
+    <height>573</height>
    </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>400</width>
+    <height>450</height>
+   </size>
   </property>
   <property name="windowTitle">
    <string>Переводчик-словарь</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
   </property>
   <widget class="QWidget" name="centralwidget">
    <layout class="QVBoxLayout" name="verticalLayout_6">
@@ -41,8 +50,13 @@
          <layout class="QHBoxLayout" name="horizontalLayout_2">
           <item>
            <widget class="QLabel" name="labelLanguageSelect">
+            <property name="font">
+             <font>
+              <bold>true</bold>
+             </font>
+            </property>
             <property name="text">
-             <string>Выбор языка</string>
+             <string>Выбор языка:</string>
             </property>
            </widget>
           </item>
@@ -55,8 +69,16 @@
          <layout class="QHBoxLayout" name="horizontalLayout_3">
           <item>
            <widget class="QLabel" name="labelDefSelect">
+            <property name="font">
+             <font>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
             <property name="text">
-             <string>Выбор номера варианта:</string>
+             <string>Выбор номера варианта перевода:</string>
             </property>
            </widget>
           </item>
@@ -158,7 +180,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>767</width>
+     <width>614</width>
      <height>22</height>
     </rect>
    </property>
